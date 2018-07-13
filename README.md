@@ -31,3 +31,8 @@ Wiederholbarkeit ± 0.1
   * Temperature
   * Humidity
   * Address: 0x5c
+
+## Attiny85 and I2C
+(http://www.instructables.com/id/Using-an-I2C-LCD-on-Attiny85/)
+The attiny85 can simulate I2C on PB2 (pin 7) (SCL) and PB0 (pin 5) (SDA). The 'Wire' library that is used to read and write bytes from and to the I2C port on the arduino doesn't work on the attiny. It needs the TinyWireM library to act as an I2C master.
+Depending libraries have to be adapted to also use the TinyWireM: http://www.instructables.com/id/Serial-I2C-HD44780-compatible-LCD-for-ATTINY85/
